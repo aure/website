@@ -1,8 +1,15 @@
 <html>
     <head>
         <title>Aure Prochazka</title>
+        <script crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.3/dist/wolfram-notebook-embedder.min.js"></script>
     </head>
     <body>
-    <iframe src="https://www.wolframcloud.com/obj/aure/Published/Resume.nb?_embed=iframe" width="100%" height="100%"></iframe>
+        <div id="notebookContainer"></div>
+        <script>
+            WolframNotebookEmbedder.embed(
+             'https://www.wolframcloud.com/obj/aure/Published/Resume.nb',
+             document.getElementById('notebookContainer')
+            )
+        </script>
     </body>
 </html>
